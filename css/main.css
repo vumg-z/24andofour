@@ -298,7 +298,7 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 1024px){
     .cta {
-        width: 50%;
+        width: 40%;
     }
 
     .container {
@@ -333,6 +333,7 @@ nav ul li a:hover {
         background-color: inherit;
         text-align: right;
         padding: 1em 2em;
+        width: auto;
     }
 
     nav ul li a:hover{
