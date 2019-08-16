@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24andfour</title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+   <div class="container">
+       <header>
+            <img src="images/logo.svg" alt="24andfourlogo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+      </header>
+    
+        <section>
+            
+            <img class="server" src="./images/server6.svg" alt="server5">
+
+            <div class="text">
+                <h2>We'd love to hear from you!</h2>
+                <p>Keep in touch and let us know what can we help</p>
+            </div>    
+            
+            <form>
+                <div class="field-name">
+                    <input type="text" placeholder="NAME">
+                </div>
+
+                <div class="field-email">
+                    <input type="text" placeholder="EMAIL">
+                </div>
+
+                <div class="field-message">
+                        <input type="text" placeholder="MESSAGE">
+                </div>
+
+                <a href="#" class="cta">Submit</a>
+            </form>
+            
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                
+                    <img src="images/logo-white.svg" alt="logo" class="logo">
+                    <p class="address">Melrose Place, 90210 <br> USA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                
+            </div>
+        </div>
+    </footer>
+        
+
+        <script>
+            var menu = document.getElementById("menu");
+            var nav = document.getElementById("nav");
+            var exit = document.getElementById("exit");
+
+            menu.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });                                       
+                                        
+            exit.addEventListener('click', function(e){
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });                                                                     
+        </script>
+   
+</body>
+</html>
